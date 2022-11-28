@@ -1,0 +1,96 @@
+<html>
+    <style>
+        .container{
+            padding :10%;
+            margin: 3%;
+            background-color: cadetblue;
+        }
+        .input-text{
+            width: 100%;
+            position: relative;
+            margin-top: 5px;
+            margin-bottom: 12px;
+        }
+    </style>
+    <script>
+        function validateAlfa(e) {
+            alert(e.key);
+            var latters = /^[A-Za-z]+$/;
+            if(e.key.match(latters)) {
+                return true;
+            }
+            else{
+                e.preventDefault();
+                return false;
+            }
+        }
+        function validatePassword(e) {
+    //at least one capital, at least one small, one simbol and one number and at least lenghth should be 8
+            
+            var password = document.getElementById("pass").value;
+            var capitalLatters = /^[A-Za]+$/;
+            var smallLatters = /^[a-z]+$/;
+            var numbers = /^[0-9]+$/;
+            var specialRegesx = /^[a-zA-Z0-9!\$%\^\&*\)\(+=._=)]+$/g;
+            var isContainSmall = false;
+            var isContainCapital = false;
+            var isContainNumber = false;
+            var isContainSpecial = false;    
+
+        for(var i=0; i<password.length ; i++){
+            if(password.getCharAt(i).match(capitalLatters))
+            isContainCapital = true;
+            if(password.getCharAt(i).match(smallLatters))
+            isContainSmall = true;
+
+            if(password.getCharAt(i).match(numbers))
+            isContainNumber = true;
+
+            if(password.getCharAt(i).match(specialRegesx))
+            isContainSpecial = true;
+            {
+                alert("password is strong");
+            }
+            else {
+                alert("passwrod is week");
+            }  
+
+
+        }
+    </script>
+    <body>
+        <div class="container">
+            <h1>Covid Vaccine Registartion</h1>
+            <form action="#">
+                <label>First Name</label>
+                <input type="text" class="input-text" id="fName" onkeypress="validateAlfa(event)"/><br>
+                <label>Middel Name</label>
+                <input type="text" class="input-text" id="mName"/><br>
+                <label>Last Name</label>
+                <input type="text" class="input-text" id="lName"/><br>
+                <label>Password</label>
+                <input type="text" class="input-text" id="pass" onkeypress="validatePassword(event)"/><br>
+                <label>Email</label>
+                <input type="email" class="input-text" id="email"/><br>
+                <label>Mobile No</label>
+                <input type="number" class="input-text" id="mobile"/><br>
+                <label>Date of Birth</label>
+                <input type="date" class="input-text" id="date"/><br>
+                <label>Type of Vaccine</label>
+                <select>
+                    <option>selection</option>
+                    <option>Covishield</option>
+                    <option>COvaccine</option>
+                    <option>Piser</option>
+                    <option>Sputnic</option>
+                </select> 
+                <div>
+                    <button>submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+
+            </form>
+
+        </div>
+    </body>
+</html>

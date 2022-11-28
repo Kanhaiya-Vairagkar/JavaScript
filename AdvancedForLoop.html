@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        //for showing index for in loop used
+        let arr = [45, 545, 7, 980];            
+        for (let a in arr) {
+             console.log(a);
+        }
+
+        //for showing values for in loop used
+
+        for(let a of arr)
+        {
+            console.log(a);
+        }
+
+
+        //for showing index as well as values foreach loop used
+
+        var arr1=arr.forEach((index,value) =>
+        {
+            console.log(index,value);
+        });
+    </script>
+</body>
+
+</html>

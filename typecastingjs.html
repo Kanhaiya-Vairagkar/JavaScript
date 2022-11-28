@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //implicitely type casting
+        console.log("5" + 5);//55
+        console.log(5 - 5);//0
+        console.log("a" + 5);//a5
+        console.log(5 - "a");//NaN -->Not a Number
+
+
+        //Explicitely type casting
+        console.log(Number("5") + 5);
+        console.log(String(5) + 5);
+        console.log(Number('a') + 5);  //Char not convrted into number in js
+    </script>
+</body>
+
+</html>

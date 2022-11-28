@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Object Creation by using using literals
+
+        // let obj = {
+        //     name: "abc",
+        //     age: 15,
+        //     mstatud: true
+        // }
+        // console.log(obj);
+        // console.log(obj.name);
+
+        // //Update
+        // obj.name = "jay"
+        // console.log(obj);
+
+        //Object Creation by using new keyward
+        // let obj1 = new Object();
+        // obj1.name="ABC";
+        // obj1.age=18;
+        // obj1.status=true;
+        // console.log(obj1);
+        // // console.log(typeof obj1);
+        // obj1.name="SP_group"
+        // console.log(obj1);
+
+         
+        //Object Creation by using function
+         function obj3(brand,make,model){
+            this.brand=brand;
+            this.make=make;
+            this.model=model;
+         }
+
+         let obj4 =new obj3("nokia","japan","5400cs")
+         console.log(obj4);
+         obj4.brand="samsung";
+         console.log(obj4);
+       
+
+
+
+    </script>
+</body>
+
+</html>
