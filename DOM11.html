@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="title"> We are learning javascript</div>
+        <div id="content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae deleniti aliquid, laudantium maiores
+            exercitationem, at est harum modi quaerat, eligendi rerum labore. Enim molestias illo incidunt! Iusto
+            expedita maxime corrupti!
+
+        </div>
+    </div>
+    <script>
+        let a = document.getElementById("container");
+        console.log(a.firstElementChild.nodeName);
+        var arrow = (g, h) => {
+            console.log("This is arrow function");
+            console.log(g + h);
+        }
+        arrow(20, 10);
+    </script>
+</body>
+
+</html>

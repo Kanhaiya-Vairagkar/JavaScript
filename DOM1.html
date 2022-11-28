@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        padding: 45px;
+        margin: 4px;
+        background-color: red;
+    }
+
+    .div {
+        background: blue;
+        margin: 45px;
+    }
+</style>
+
+<body>
+    <button id="butt">click on</button>
+    <div class="div">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, delectus amet, quos assumenda
+        sit incidunt porro excepturi a vitae adipisci consequatur, sunt eveniet? Odit, possimus. Quasi iste debitis
+        aliquam! Tempora?
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, delectus amet, quos assumenda
+        sit incidunt porro excepturi a vitae adipisci consequatur, sunt eveniet? Odit, possimus. Quasi iste debitis
+        aliquam! Tempora?
+
+    </div>
+    <script>
+
+        //   let g = document.getElementsByTagName('button');
+        //   g[0].style.background='blue';
+        //   g[0].style.margin='25px';
+        //   g[0].style.padding='25px';
+
+        //   console.log(g);
+        // let a = document.querySelector('.container');
+        // console.log(a);
+
+        // let v = document.querySelectorall('.container');
+        // console.log(v);
+
+
+        //We can add child div inside class aswell as tag
+        let j = document.getElementsByTagName('div');
+        console.log(j);
+        createdeElement=document.createElement('p');
+        createdeElement.innertext="This is Kanhaiya";
+        j[0].appendChild(createdeElement);
+
+    </script>
+</body>
+
+</html>

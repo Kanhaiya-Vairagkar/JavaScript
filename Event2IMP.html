@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #btn {
+            color: red;
+            background-color: aqua;
+            margin-right: 45px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+        <h1>This is my heading</h1>
+        <p id="para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quae magni possimus nulla dolores eius
+            repellat modi nobis obcaecati, esse, doloribus harum non ex perferendis aut numquam ratione nemo corrupti.
+            Quam quisquam repudiandae perferendis voluptas sequi hic vero nisi numquam exercitationem, deserunt ut
+            doloribus delectus magnam nobis totam! Ipsam provident repellendus fugiat. Illum officiis ab voluptates
+            quam. Sunt, molestiae cupiditate?
+            Neque at vitae nobis, nam quis quidem vero corrupti repudiandae pariatur repellat rem recusandae tempore,
+            saepe, amet quia facere libero debitis. Dolore, aperiam. Eum facere maiores non vero provident. Temporibus.
+            Neque, cumque tempora doloribus ea nulla, aliquam blanditiis quia rem numquam laboriosam minus deserunt
+            saepe mollitia non quo reiciendis? Rerum sint, inventore reprehenderit sequi aliquam non voluptatibus
+            veritatis excepturi nam.
+            Deleniti, delectus sequi. Atque error officia at dolore incidunt soluta nam nostrum aperiam? Necessitatibus
+            minima impedit ipsam unde harum perferendis esse. Molestias numquam neque animi quaerat at alias, delectus
+            dignissimos.
+            Repudiandae non minus ipsam, voluptates molestiae quam omnis explicabo beatae blanditiis recusandae. At
+            quisquam dolores et rem, assumenda reprehenderit optio veritatis corporis ad nihil reiciendis, vero itaque
+            in? Nobis, odio.
+            Sunt eaque obcaecati fugiat, itaque quibusdam quidem dolor possimus hic impedit assumenda. Quidem numquam
+            placeat natus quasi, sequi dolor doloribus recusandae exercitationem quos soluta dolorem assumenda illum
+            blanditiis commodi quis!
+            Enim labore, deleniti voluptate sapiente officiis temporibus! Doloremque, nulla voluptas necessitatibus
+            eaque nobis itaque omnis exercitationem iste quisquam sit debitis quia id libero voluptatum minus sint nisi
+            similique totam? Quibusdam.
+        </p>
+    </div>
+    <button id="btn" onclick="toggleHide()">Show Hide</button>
+    <script>
+
+        // let para = document.getElementById('para');
+        // para.addEventListener('mouseover', function run() {
+        //     alert('Mouse Inside')
+        // });
+       // let para = document.getElementById('para');
+        // para.addEventListener('mouseout', function run() {
+        //     alert('Mouse outside')
+        // });
+
+
+
+        function toggleHide() {
+            let btn = document.getElementById("btn");
+            let para = document.getElementById("para");
+            if (para.style.display != 'none') {
+                para.style.display = 'none'
+            }
+            else {
+                para.style.display = 'block'
+            }
+        }
+    </script>
+
+</body>
+
+</html>

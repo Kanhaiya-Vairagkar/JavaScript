@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="main">
+        <div id="title"></div>
+        <div id="hint"></div>
+    </div>
+    <button onclick="add()"> OK </button>
+    <script>
+        function add() {
+            let a = document.createElement("div");
+            console.log(a);
+            let b = document.createTextNode("Kanhaiya live in pune")
+            a.appendChild(b);
+            console.log(a);
+            let c = document.createTextNode("KV_Group of Technology");
+            a.appendChild(c);
+            console.log(a);
+            // let main = document.getElementById('main');
+            // main.appendChild(a);
+            // console.log(main);
+            let g = document.getElementById("main")
+            g.appendChild(a);
+            console.log(g);
+        }
+
+    </script>
+</body>
+
+</html>
