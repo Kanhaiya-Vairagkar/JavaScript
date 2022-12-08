@@ -2,104 +2,135 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 
 </head>
 
 <body>
-    <script>
-        //Non-parameteriszed function
-        // function demo1() {
-        //     var a = 90;
-        //     var b = 90;
-        //     console.log(a + b);
-        // }
-        //  demo1();
+  <script>
+    //Non-parameteriszed function
+    // function demo1() {
+    //     var a = 90;
+    //     var b = 90;
+    //     console.log(a + b);
+    // }
+    //  demo1();
 
-        //Parameteriszed function
-        //     function demo(a, b)
-        //    {
-        //     console.log(a+b);
-        //    }
-        //    demo(10,10);
+    //Parameteriszed function
+    //     function demo(a, b)
+    //    {
+    //     console.log(a+b);
+    //    }
+    //    demo(10,10);
 
-        //Expression Function
-        // var fun = function demo() {
-        //     var a = 90;
-        //     var b = 90;
-        //     console.log(a + b);
-        // }
-        // console.log(fun());        //Here take variable and this variable convert variable into function by giving paraenthesis
+    //Expression Function
+    // var fun = function demo() {
+    //   var a = 90;
+    //   var b = 90;
+    //   console.log(a + b);
+    // }
+    // var j = fun();
+    // // console.log(j);
 
-        //Anonymous function
-        // var anony = function (e, f) {
-        //     console.log("this is anonymous function");
-        //     console.log(e - f);
-        // }
-        // anony(50, 40)
-        // (50, 40);
+    // Function Expression
 
-        //arrow function
-        // var arrow = (g, h) => {
-        //     console.log("This is arrow function");
-        //     console.log(g / h);
-        // }
-        // arrow(20,10);
+    // const add = function(a, b) {
+    // 	console.log(a+b);
+    // }
 
-        //Debuging
-        // console.log("Start");
-        // function demo(a,b)
-        // {
-            
-        //     console.log(a+b);
-        // }
-        // demo(90,90);
-        
-        //IIFE --->Immediate Invoke afunction Expression  -->Use and  destroy function.This function use only once.
-
-        //   (function demo(a,b)
-        //   {
-        //     console.log("this is life");
-        //     console.log(a+b);
-        //   }(10,10));
+    // // Calling function
+    // add(2, 3);
 
 
-        const fizzBuzz = num => {
+    // var fun1 = function demos() {
+    //   var a = 90;
+    //   var b = 90;
+    //   return a + b;
+    // }
+    // var t = fun1();
+    // console.log(t);
 
-for(let i = 1; i <= num; i++) {
+    //Here take variable and this variable convert variable into function by giving paraenthesis
 
-  // check if the number is a multiple of 3 and 5
 
-  if(i % 3 === 0 && i % 5 === 0) {
+    // function demo() {
+    //   var a = 90;
+    //   var b = 90;
+    //   console.log(a + b);
+    // }
+    // var o = demo();
+    // console.log(a);
 
-    console.log('fizzbuzz')
 
-  } // check if the number is a multiple of 3
+    //Anonymous function
+    var anony = function (e, f) {
+      console.log("this is anonymous function");
+      console.log(e - f);
+    }
+    anony(50, 40)
+      (50, 40);
 
-    else if(i % 3 === 0) {
+    //arrow function
+    // var arrow = (g, h) => {
+    //     console.log("This is arrow function");
+    //     console.log(g / h);
+    // }
+    // arrow(20,10);
 
-    console.log('fizz')
+    //Debuging
+    // console.log("Start");
+    // function demo(a,b)
+    // {
 
-  } // check if the number is a multiple of 5
+    //     console.log(a+b);
+    // }
+    // demo(90,90);
 
-    else if(i % 5 === 0) {
+    //IIFE --->Immediate Invoke afunction Expression  -->Use and  destroy function.This function use only once.
 
-    console.log('buzz')
+    //   (function demo(a,b)
+    //   {
+    //     console.log("this is life");
+    //     console.log(a+b);
+    //   }(10,10));
 
-  } else {
 
-    console.log(i)
+    const fizzBuzz = num => {
 
-  }
+      for (let i = 1; i <= num; i++) {
 
-}
+        // check if the number is a multiple of 3 and 5
 
-}
-    </script>
-   
+        if (i % 3 === 0 && i % 5 === 0) {
+
+          console.log('fizzbuzz')
+
+        } // check if the number is a multiple of 3
+
+        else if (i % 3 === 0) {
+
+          console.log('fizz')
+
+        } // check if the number is a multiple of 5
+
+        else if (i % 5 === 0) {
+
+          console.log('buzz')
+
+        } else {
+
+          console.log(i)
+
+        }
+
+      }
+
+    }
+  </script>
+
 </body>
 
 </html>
