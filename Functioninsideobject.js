@@ -1,6 +1,6 @@
 const obj = {
     name: 'Kanha',
-    game: function (){
+    game: function () {
         // return 'Mahesh';
         console.log(" Mahesh ");
     },
@@ -32,12 +32,12 @@ var a = {
         var c = a + b;
         console.log("Addition : " + c);
     },
-   multiplication:function() {
-    var a = 90;
-    var b = 910;
-    var c = a * b;
-    console.log("Multiplication : " + c);
-   }
+    multiplication: function () {
+        var a = 90;
+        var b = 910;
+        var c = a * b;
+        console.log("Multiplication : " + c);
+    }
 }
 a.add();
 a.multiplication();

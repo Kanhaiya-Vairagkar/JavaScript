@@ -16,7 +16,7 @@ console.log(" Data type is " + (typeof obj));
 
 // Function 
 function findname() {
-    
+
 }
 console.log(" Data type is " + (typeof findname));
 

@@ -23,12 +23,12 @@
 //Here take variable and this variable convert variable into function by giving paraenthesis
 
 //Anonymous function
-var anony = function (e, f) {
-    console.log("this is anonymous function");
-    console.log(e - f);
-}
-// anony(50, 40);
-    (50, 40);
+// var anony = function (e, f) {
+//     console.log("this is anonymous function");
+//     console.log(e - f);
+// }
+// // anony(50, 40);
+//     (50, 40);
 
 //arrow function
 // var arrow = (g, h) => {
@@ -86,3 +86,44 @@ var anony = function (e, f) {
 //     }
 
 // }
+
+// var anony = function (e, f) {
+//     console.log("this is anonymous function");
+//     console.log(e - f);
+// }
+// // anony(50, 40);
+//     (50, 40);
+
+// var a = function (a, b) {
+//     console.log("This is anonymous function");
+//     console.log(a - b);
+// }
+// (100, 50);
+
+// var Addition = function (m, n) {
+//     console.log("Kanhaiya Vairagkar");
+//     var c = m - n;
+//     console.log("Substraction : " + c);
+// }
+// (100, 50);
+
+// var arrow = (g, h) => {
+//     console.log("This is arrow function");
+//     console.log(g / h);
+// }
+// arrow(20,10);
+
+var sub = (a, b) => {
+    var c = a - b;
+    var i = a * b;
+    return "Addition : " + c + " " + i;
+}
+console.log(sub(10, 5));
+
+var mul = function (m, n) {
+    var m;
+    var n;
+    var j = m * n;
+    console.log("Multiplication : " + j)
+}
+(10, 5);
