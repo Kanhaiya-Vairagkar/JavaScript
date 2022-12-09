@@ -11,3 +11,4 @@ console.log(names[0], names[2], names[3], names[4]);
 console.log(names);
 console.log(names.length);
 
+
