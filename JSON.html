@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // JSON is a format for storing and transporting data.
+
+        // JSON is often used when data is sent from a server to a web page.
+
+        // What is JSON?
+        // JSON stands for JavaScript Object Notation
+        // JSON is a lightweight data interchange format
+        // JSON is language independent *
+        // JSON is "self-describing" and easy to understand
+        // JSON.stringify() is used for converting JSON object into javascript object
+
+        obj = { name: "Kanhaiya", length: 1 };
+        jso = JSON.stringify(obj);  // Here convert object(Javascript) into (JSON)String
+        console.log(typeof jso);
+        console.log(typeof obj);
+        console.log(jso);
+        console.log();
+
+        obj1 = { name: "Kanhaiya", length: 1, a: { this: "that" } }; // Here 'a' is object inside 'obj' object
+        jso1 = JSON.stringify(obj1);
+        console.log(typeof jso1);
+        console.log(typeof obj1);
+        console.log(jso1);
+        console.log();
+
+        // JSON.parse() is used for converting JSON String into javascript object
+        parsed = JSON.parse(`{"name":"Kanhaiya","length":1,"a":{"this":"that"}}`);
+        console.log(typeof parsed);
+        console.log(parsed);
+        console.log();
+
+    </script>
+</body>
+
+</html>
